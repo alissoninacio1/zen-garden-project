@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Orbitron:wght@500&display=swap");
+/* ------- MOBILE VERSION ------*/
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+div.page-wrapper {
+  margin-inline: auto;
+  text-align: center;
+  background-color: hsl(208deg, 94%, 49%);
+}
+
+.intro header h1 {
+  background-color: hsl(242deg, 78%, 37%);
+  font-family: "Orbitron", sans-serif;
+  color: hsl(180deg, 90%, 51%);
+  font-size: 4rem;
+  padding: 1rem 2.2rem;
+}
+.intro header h2 {
+  padding: 5rem 2.2rem 3.6rem 2.2rem;
+  font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
+  color: hsl(180deg, 90%, 51%);
+}
+.intro header h2 abbr {
+  text-decoration: none;
+}
+.intro .summary {
+  margin-inline: 5.1rem;
+  background-color: white;
+  color: hsl(242deg, 78%, 37%);
+  font-family: "Advent Pro", sans-serif;
+}/*# sourceMappingURL=style.css.map */

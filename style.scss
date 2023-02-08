@@ -1,9 +1,73 @@
 //general imports
-@use 'atoms';
-@use 'molecules';
-@use 'organisms';
-@use 'variables';
+@import 'atoms';
+@import 'molecules';
+@import 'organisms';
+@import 'variables';
 
 
 /* ------- MOBILE VERSION ------*/
+
+
+// --general--
+
+:root {
+    //1rem   = 10px
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+div.page-wrapper {
+    margin-inline: auto;
+    text-align: center;
+    background-color: $primary-color;
+}
+
+.intro {
+    header {
+    
+        h1 {
+            background-color: $secondary-color;
+            font-family: $orbitron-font;
+            color: $title-color;
+            font-size: 4rem;
+            padding: 1rem 2.2rem;       
+        }
+    
+        h2 {
+            padding: 5rem 2.2rem 3.6rem 2.2rem;
+            font-size: 2rem;
+            font-family: $orbitron-font;
+            color: $title-color;
+    
+            abbr {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .summary {
+        margin-inline: 5.1rem;
+        background-color: $paragraph-color;
+        color: $secondary-color;
+        font-family:$advent-font;
+    }
+}
+
 
