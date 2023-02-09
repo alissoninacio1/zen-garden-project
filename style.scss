@@ -1,8 +1,8 @@
 //general imports
-@import 'atoms';
-@import 'molecules';
-@import 'organisms';
-@import 'variables';
+@import './general-styles/atoms';
+@import './general-styles/molecules';
+@import './general-styles/organisms';
+@import './general-styles/variables.scss';
 
 
 /* ------- MOBILE VERSION ------*/
