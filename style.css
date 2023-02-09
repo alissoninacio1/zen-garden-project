@@ -44,6 +44,10 @@ div.page-wrapper {
 .intro .summary {
   margin-inline: 5.1rem;
   background-color: white;
+  padding: 2rem 2rem;
+}
+.intro .summary p {
+  font-size: 1rem;
   color: hsl(242deg, 78%, 37%);
   font-family: "Advent Pro", sans-serif;
 }/*# sourceMappingURL=style.css.map */

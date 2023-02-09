@@ -22,6 +22,7 @@
 }
 
 
+0.00
 
 html {
     scroll-behavior: smooth;
@@ -65,9 +66,16 @@ div.page-wrapper {
     .summary {
         margin-inline: 5.1rem;
         background-color: $paragraph-color;
-        color: $secondary-color;
-        font-family:$advent-font;
+        padding: 2rem 2rem;
+
+        p {
+            font-size: 1rem;
+            color: $secondary-color;
+            font-family:$advent-font;
+        }
     }
+
+    
 }
 
 
