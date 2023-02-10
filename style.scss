@@ -5,10 +5,10 @@
 @import './general-styles/variables.scss';
 
 
-/* ------- MOBILE VERSION ------*/
+/* ----------------------------- MOBILE VERSION ----------------------*/
 
 
-// --general--
+// --general rules--
 
 :root {
     //1rem   = 10px
@@ -22,17 +22,20 @@
 }
 
 
-0.00
-
 html {
     scroll-behavior: smooth;
 }
 
-html, body {
+html, 
+body {
     height: 100%;
     width: 100%;
 }
 
+a, 
+abbr {
+    text-decoration: none;
+}
 
 div.page-wrapper {
     margin-inline: auto;
@@ -40,7 +43,42 @@ div.page-wrapper {
     background-color: $primary-color;
 }
 
+h3 {
+    border-top: solid $secondary-color;
+    width: 90%;
+    margin:auto;
+    padding-block: 2rem;
+    font-size: 2.2rem;
+    color: $title-color;
+    font-family: $orbitron-font;
+    font-weight: 500;
+}
+
+
+//mixins 
+
+@mixin paragraph-style {
+    font-size: 1.4rem;
+    margin-inline: 15%;
+    padding: 1.5rem;
+    color: $secondary-color;
+    background-color: $paragraph-color;
+    font-family:$advent-font;
+    font-weight: 600;
+}
+
+@mixin bottom-sections {
+    margin-bottom: 3.5rem;
+}
+
+
+
+
+
+// ---SECTION INTRO----
 .intro {
+
+    //header
     header {
     
         h1 {
@@ -52,30 +90,93 @@ div.page-wrapper {
         }
     
         h2 {
-            padding: 5rem 2.2rem 3.6rem 2.2rem;
-            font-size: 2rem;
+            padding: 5rem 2.2rem 3.6rem;
+            font-size: 2.2rem;
+            font-weight: 400;
             font-family: $orbitron-font;
             color: $title-color;
+        }
+    }
+
+    //summary class
+    .summary {
+        margin-bottom: 3.5rem;
+
+        p {
+            @include paragraph-style();
+        }
+
+        p + p {
+            padding-block: 1rem;
+            a {
+                font-weight: bold;
+            }
+        }
+    }  
+
+    //preamble
+    .preamble {
+        margin-bottom: 3.5rem;
+    }
+}
+ 
+//sections that receive paragraphs with the same layout
+.preamble p, 
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p {             
+     @include paragraph-style;    
+}
+
+// main class 
+
+.main {
+    //classes that receives a margin bottom
+    .explanation, 
+    .participation,
+    .benefits,
+    .requirements {
+        @include bottom-sections;
+    }
+
+    // footer { 
+    // }
+}
+
+.wrapper {
+
+    //general bottom sections rule
+    .design-selection,
+    .design-archives,
+    .zen-resources {
+        @include bottom-sections;
+    }
+
+    ul {
+        margin-inline: 6rem;
+        list-style: none;
+        color: $secondary-color;
+
+        li {
+            margin: 1rem ;
+            font-size: 1.5rem;
+
+            
+            font-family:$advent-font;
+            font-weight: bold;
+        
+            a {
+                display: block;
+            }
     
-            abbr {
-                text-decoration: none;
+            a + a {
+                display: inline;
             }
         }
     }
 
-    .summary {
-        margin-inline: 5.1rem;
-        background-color: $paragraph-color;
-        padding: 2rem 2rem;
-
-        p {
-            font-size: 1rem;
-            color: $secondary-color;
-            font-family:$advent-font;
-        }
+    .zen-resources ul .zen-translations a {
+        padding-bottom: 5rem;
     }
-
-    
 }
-
-

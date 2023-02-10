@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Orbitron:wght@500&display=swap");
-/* ------- MOBILE VERSION ------*/
+/* ----------------------------- MOBILE VERSION ----------------------*/
 :root {
   font-size: 62.5%;
 }
@@ -14,15 +14,32 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
+}
+
+a,
+abbr {
+  text-decoration: none;
 }
 
 div.page-wrapper {
   margin-inline: auto;
   text-align: center;
   background-color: hsl(208deg, 94%, 49%);
+}
+
+h3 {
+  border-top: solid hsl(242deg, 78%, 37%);
+  width: 90%;
+  margin: auto;
+  padding-block: 2rem;
+  font-size: 2.2rem;
+  color: hsl(180deg, 90%, 51%);
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
 }
 
 .intro header h1 {
@@ -33,21 +50,77 @@ div.page-wrapper {
   padding: 1rem 2.2rem;
 }
 .intro header h2 {
-  padding: 5rem 2.2rem 3.6rem 2.2rem;
-  font-size: 2rem;
+  padding: 5rem 2.2rem 3.6rem;
+  font-size: 2.2rem;
+  font-weight: 400;
   font-family: "Orbitron", sans-serif;
   color: hsl(180deg, 90%, 51%);
 }
-.intro header h2 abbr {
-  text-decoration: none;
-}
 .intro .summary {
-  margin-inline: 5.1rem;
-  background-color: white;
-  padding: 2rem 2rem;
+  margin-bottom: 3.5rem;
 }
 .intro .summary p {
-  font-size: 1rem;
+  font-size: 1.4rem;
+  margin-inline: 15%;
+  padding: 1.5rem;
   color: hsl(242deg, 78%, 37%);
+  background-color: white;
   font-family: "Advent Pro", sans-serif;
+  font-weight: 600;
+}
+.intro .summary p + p {
+  padding-block: 1rem;
+}
+.intro .summary p + p a {
+  font-weight: bold;
+}
+.intro .preamble {
+  margin-bottom: 3.5rem;
+}
+
+.preamble p,
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p {
+  font-size: 1.4rem;
+  margin-inline: 15%;
+  padding: 1.5rem;
+  color: hsl(242deg, 78%, 37%);
+  background-color: white;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 600;
+}
+
+.main .explanation,
+.main .participation,
+.main .benefits,
+.main .requirements {
+  margin-bottom: 3.5rem;
+}
+
+.wrapper .design-selection,
+.wrapper .design-archives,
+.wrapper .zen-resources {
+  margin-bottom: 3.5rem;
+}
+.wrapper ul {
+  margin-inline: 6rem;
+  list-style: none;
+  color: hsl(242deg, 78%, 37%);
+}
+.wrapper ul li {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: bold;
+}
+.wrapper ul li a {
+  display: block;
+}
+.wrapper ul li a + a {
+  display: inline;
+}
+.wrapper .zen-resources ul .zen-translations a {
+  padding-bottom: 5rem;
 }/*# sourceMappingURL=style.css.map */
