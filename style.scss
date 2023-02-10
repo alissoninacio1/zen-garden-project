@@ -140,8 +140,21 @@ h3 {
         @include bottom-sections;
     }
 
-    // footer { 
-    // }
+    footer { 
+        background-color: $secondary-color;
+        margin-block: 1.2rem;
+        padding: 1.2rem;
+        // width: 100vw;
+        // position: absolute;
+        // top: 755%;
+
+        a {
+            margin: 0.5rem;
+            font-size: 1.5rem;
+            font-family: $orbitron-font;
+            color: $title-color;
+        }
+    }
 }
 
 .wrapper {
@@ -156,7 +169,6 @@ h3 {
     ul {
         margin-inline: 6rem;
         list-style: none;
-        color: $secondary-color;
 
         li {
             margin: 1rem ;
@@ -168,6 +180,7 @@ h3 {
         
             a {
                 display: block;
+                color: $secondary-color;
             }
     
             a + a {
