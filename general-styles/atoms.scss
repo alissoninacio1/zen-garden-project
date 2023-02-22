@@ -1,2 +1,80 @@
 
-//h2, h3, p, ul, li, and a: atoms
+@import 'variables.scss';
+
+//h1, h2, h3, p, ul, li, and a: atoms
+
+a, 
+abbr {
+    text-decoration: none;
+}
+
+h3 {
+    border-top: solid $secondary-color;
+    width: 90%;
+    margin:auto;
+    padding-block: 2rem;
+    font-size: 2.2rem;
+    color: $title-color;
+    font-family: $orbitron-font;
+    font-weight: 500;
+}
+
+h1 {
+    background-color: $secondary-color;
+    font-family: $orbitron-font;
+    color: $title-color;
+    font-size: 4rem;
+    padding: 1rem 2.2rem;       
+}
+
+h2 {
+    padding: 5rem 2.2rem 3.6rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-family: $orbitron-font;
+    color: $title-color;
+}
+
+
+.preamble p, 
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p {             
+     @include paragraph-style;    
+}
+
+
+
+ul {
+    margin-inline: 6rem;
+    list-style: none;
+
+    li {
+        margin: 1rem ;
+        font-size: 1.5rem;
+
+        
+        font-family:$advent-font;
+        font-weight: bold;
+    
+        a {
+            display: block;
+            color: $secondary-color;
+        }
+
+        a + a {
+            display: inline;
+        }
+    }
+}
+
+footer {
+    a {
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        font-family: $orbitron-font;
+        color: $title-color;
+    }
+}
+

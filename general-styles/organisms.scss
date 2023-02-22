@@ -1,1 +1,29 @@
 //Section, div main, aside sidebar and body : organisms
+@import 'variables.scss';
+
+html, 
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    //classes that receives a margin bottom
+    .explanation, 
+    .participation,
+    .benefits,
+    .requirements {
+        @include bottom-sections;
+    }
+
+}
+
+.wrapper {
+
+    //general bottom sections rule
+    .design-selection,
+    .design-archives,
+    .zen-resources {
+        @include bottom-sections;
+    }
+}

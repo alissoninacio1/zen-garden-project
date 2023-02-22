@@ -1,1 +1,39 @@
-/*# sourceMappingURL=molecules.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Orbitron:wght@500&display=swap");
+.summary {
+  margin-bottom: 3.5rem;
+}
+.summary p {
+  font-size: 1.4rem;
+  margin-inline: 15%;
+  padding: 1.5rem;
+  color: hsl(242deg, 78%, 37%);
+  background-color: white;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 600;
+}
+.summary p + p {
+  padding-block: 1rem;
+}
+.summary p + p a {
+  font-weight: bold;
+}
+
+div.page-wrapper {
+  margin-inline: auto;
+  text-align: center;
+  background-color: hsl(208deg, 94%, 49%);
+}
+
+.preamble {
+  margin-bottom: 3.5rem;
+}
+
+footer {
+  background-color: hsl(242deg, 78%, 37%);
+  margin-block: 1.2rem;
+  padding: 1.2rem;
+}
+
+.zen-resources ul .zen-translations a {
+  padding-bottom: 5rem;
+}/*# sourceMappingURL=molecules.css.map */

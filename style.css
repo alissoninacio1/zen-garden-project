@@ -1,34 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Orbitron:wght@500&display=swap");
-/* ----------------------------- MOBILE VERSION ----------------------*/
-:root {
-  font-size: 62.5%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Orbitron:wght@500&display=swap");
 a,
 abbr {
   text-decoration: none;
-}
-
-div.page-wrapper {
-  margin-inline: auto;
-  text-align: center;
-  background-color: hsl(208deg, 94%, 49%);
 }
 
 h3 {
@@ -42,40 +18,20 @@ h3 {
   font-weight: 500;
 }
 
-.intro header h1 {
+h1 {
   background-color: hsl(242deg, 78%, 37%);
   font-family: "Orbitron", sans-serif;
   color: hsl(180deg, 90%, 51%);
   font-size: 4rem;
   padding: 1rem 2.2rem;
 }
-.intro header h2 {
+
+h2 {
   padding: 5rem 2.2rem 3.6rem;
   font-size: 2.2rem;
   font-weight: 400;
   font-family: "Orbitron", sans-serif;
   color: hsl(180deg, 90%, 51%);
-}
-.intro .summary {
-  margin-bottom: 3.5rem;
-}
-.intro .summary p {
-  font-size: 1.4rem;
-  margin-inline: 15%;
-  padding: 1.5rem;
-  color: hsl(242deg, 78%, 37%);
-  background-color: white;
-  font-family: "Advent Pro", sans-serif;
-  font-weight: 600;
-}
-.intro .summary p + p {
-  padding-block: 1rem;
-}
-.intro .summary p + p a {
-  font-weight: bold;
-}
-.intro .preamble {
-  margin-bottom: 3.5rem;
 }
 
 .preamble p,
@@ -92,22 +48,81 @@ h3 {
   font-weight: 600;
 }
 
+ul {
+  margin-inline: 6rem;
+  list-style: none;
+}
+ul li {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: bold;
+}
+ul li a {
+  display: block;
+  color: hsl(242deg, 78%, 37%);
+}
+ul li a + a {
+  display: inline;
+}
+
+footer a {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  font-family: "Orbitron", sans-serif;
+  color: hsl(180deg, 90%, 51%);
+}
+
+.summary {
+  margin-bottom: 3.5rem;
+}
+.summary p {
+  font-size: 1.4rem;
+  margin-inline: 15%;
+  padding: 1.5rem;
+  color: hsl(242deg, 78%, 37%);
+  background-color: white;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 600;
+}
+.summary p + p {
+  padding-block: 1rem;
+}
+.summary p + p a {
+  font-weight: bold;
+}
+
+div.page-wrapper {
+  margin-inline: auto;
+  text-align: center;
+  background-color: hsl(208deg, 94%, 49%);
+}
+
+.preamble {
+  margin-bottom: 3.5rem;
+}
+
+footer {
+  background-color: hsl(242deg, 78%, 37%);
+  margin-block: 1.2rem;
+  padding: 1.2rem;
+}
+
+.zen-resources ul .zen-translations a {
+  padding-bottom: 5rem;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 .main .explanation,
 .main .participation,
 .main .benefits,
 .main .requirements {
   margin-bottom: 3.5rem;
-}
-.main footer {
-  background-color: hsl(242deg, 78%, 37%);
-  margin-block: 1.2rem;
-  padding: 1.2rem;
-}
-.main footer a {
-  margin: 0.5rem;
-  font-size: 1.5rem;
-  font-family: "Orbitron", sans-serif;
-  color: hsl(180deg, 90%, 51%);
 }
 
 .wrapper .design-selection,
@@ -115,25 +130,20 @@ h3 {
 .wrapper .zen-resources {
   margin-bottom: 3.5rem;
 }
-.wrapper ul {
-  margin-inline: 6rem;
-  list-style: none;
+
+/* ----------------------------- MOBILE VERSION ----------------------*/
+:root {
+  font-size: 62.5%;
 }
-.wrapper ul li {
-  margin: 1rem;
-  font-size: 1.5rem;
-  font-family: "Advent Pro", sans-serif;
-  font-weight: bold;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.wrapper ul li a {
-  display: block;
-  color: hsl(242deg, 78%, 37%);
-}
-.wrapper ul li a + a {
-  display: inline;
-}
-.wrapper .zen-resources ul .zen-translations a {
-  padding-bottom: 5rem;
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media only screen and (min-width: 45rem) {
