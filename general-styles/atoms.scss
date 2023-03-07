@@ -8,17 +8,6 @@ abbr {
     text-decoration: none;
 }
 
-h3 {
-    border-top: solid $secondary-color;
-    width: 90%;
-    margin:auto;
-    padding-block: 2rem;
-    font-size: 2.2rem;
-    color: $title-color;
-    font-family: $orbitron-font;
-    font-weight: 500;
-}
-
 h1 {
     background-color: $secondary-color;
     font-family: $orbitron-font;
@@ -33,6 +22,17 @@ h2 {
     font-weight: 400;
     font-family: $orbitron-font;
     color: $title-color;
+}
+
+h3 {
+    border-top: solid $secondary-color;
+    width: 90%;
+    margin:auto;
+    padding-block: 2rem;
+    font-size: 2.2rem;
+    color: $title-color;
+    font-family: $orbitron-font;
+    font-weight: 500;
 }
 
 

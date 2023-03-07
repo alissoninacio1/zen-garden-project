@@ -28,18 +28,30 @@ html {
 
 
 
-//media queries go here
+
+/* ----------------------------- DESKTOP VERSION ----------------------*/
 
 @media only screen and (min-width: 45rem) {
   
-    //animation by Peter Ashton
-.intro header h1 {
+  .intro header{
+    width: auto;
+    height: 24rem;
+    background-size: 50% 100%;
+    background-repeat: repeat;
+    background-clip: border-box;
+    background-image: url("https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2572&q=80");
+  }
+
+
+  .intro header h1 {
+    padding-top: 8rem;
+
     background-image: linear-gradient(
       -135deg,
-      #13F2F2 0%,
-      #1A05A6 35%,
+      white 0%,
+      #CE048E 35%,
       #0785F2 67%,
-      #13F2F2 100%
+      #1CECFF 100%
     );
     background-size: auto auto;
     background-clip: border-box;
@@ -48,15 +60,121 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 5s linear infinite;
-    font-size: 4rem;
-    font-family: "Orbitron", sans-serif;
+    font-size: 7.5rem;
+    font-family: $orbitron-font;
   }
 
-  @keyframes textclip {
-    to {
-      background-position: 100% center;
+
+  .intro header h2 {
+    margin-top: 6rem;
+    padding-right: 4rem;
+    font-size: 5rem;
+    text-align: right;
+  }
+
+  
+
+  .intro .summary {
+    margin: 16rem auto auto auto;
+    border: 100px solid transparent;
+    border-image: url("https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2572&q=80")
+    25% round;
+  }
+
+  .preamble p,
+  .explanation p,
+  .participation p,
+  .benefits p,
+  .requirements p {
+    border: 100px solid transparent;
+    border-image: url("https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2572&q=80")
+    25% round;
+  }
+    /*SEND H3 TO THE LEFT*/
+    .preamble h3,
+    .participation h3,
+    .requirements h3 {
+    text-align: left;
     }
-  }
 
+    /*SEND H3 TO THE RIGHT*/
+    .explanation h3,
+    .benefits h3 {
+      text-align: right;
+    }
+
+    @keyframes textclip {
+      to {
+        background-position: 100% center;
+      }
+    }
+
+
+
+
+    .intro .summary p + p {
+      padding-block: 1rem;
+    }
+    .intro .summary p + p a {
+      font-weight: bold;
+    }
+    .intro .preamble {
+      margin-bottom: 3.5rem;
+    }
+
+    .main .explanation,
+    .main .participation,
+    .main .benefits,
+    .main .requirements {
+      margin-bottom: 3.5rem;
+    }
+    .main footer {
+      background-color: hsl(242deg, 78%, 37%);
+      margin-block: 1.2rem;
+      padding: 1.2rem;
+    }
+    .main footer a {
+      margin: 0.5rem;
+      font-size: 1.5rem;
+      font-family: "Orbitron", sans-serif;
+      color: hsl(180deg, 90%, 51%);
+    }
+    .sidebar h3.select {
+      text-align: center;
+      overflow: hidden;
+      }
+    .sidebar h3.archives {
+      text-align: center;
+      overflow: hidden;
+      }
+    .sidebar h3.resources {
+    text-align: center;
+      overflow: hidden;
+      }
+    .wrapper .design-selection,
+    .wrapper .design-archives,
+    .wrapper .zen-resources {
+      margin-bottom: 3.5rem;
+    }
+    .wrapper ul {
+      margin-inline: 6rem;
+      list-style: none;
+    }
+    .wrapper ul li {
+      margin: 1rem;
+      font-size: 1.5rem;
+      font-family: "Advent Pro", sans-serif;
+      font-weight: bold;
+    }
+    .wrapper ul li a {
+      display: block;
+      color: hsl(242deg, 78%, 37%);
+    }
+    .wrapper ul li a + a {
+      display: inline;
+    }
+    .wrapper .zen-resources ul .zen-translations a {
+      padding-bottom: 5rem;
+    }
 
 }

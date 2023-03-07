@@ -4,17 +4,6 @@ abbr {
   text-decoration: none;
 }
 
-h3 {
-  border-top: solid hsl(242deg, 78%, 37%);
-  width: 90%;
-  margin: auto;
-  padding-block: 2rem;
-  font-size: 2.2rem;
-  color: hsl(180deg, 90%, 51%);
-  font-family: "Orbitron", sans-serif;
-  font-weight: 500;
-}
-
 h1 {
   background-color: hsl(242deg, 78%, 37%);
   font-family: "Orbitron", sans-serif;
@@ -29,6 +18,17 @@ h2 {
   font-weight: 400;
   font-family: "Orbitron", sans-serif;
   color: hsl(180deg, 90%, 51%);
+}
+
+h3 {
+  border-top: solid hsl(242deg, 78%, 37%);
+  width: 90%;
+  margin: auto;
+  padding-block: 2rem;
+  font-size: 2.2rem;
+  color: hsl(180deg, 90%, 51%);
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
 }
 
 .preamble p,
