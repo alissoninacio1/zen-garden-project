@@ -5,9 +5,9 @@ abbr {
 }
 
 h1 {
-  background-color: hsl(242deg, 78%, 37%);
+  background-color: hsl(242, 78%, 37%);
   font-family: "Orbitron", sans-serif;
-  color: hsl(180deg, 90%, 51%);
+  color: hsl(180, 90%, 51%);
   font-size: 4rem;
   padding: 1rem 2.2rem;
 }
@@ -17,16 +17,16 @@ h2 {
   font-size: 2.2rem;
   font-weight: 400;
   font-family: "Orbitron", sans-serif;
-  color: hsl(180deg, 90%, 51%);
+  color: hsl(180, 90%, 51%);
 }
 
 h3 {
-  border-top: solid hsl(242deg, 78%, 37%);
+  border-top: solid hsl(242, 78%, 37%);
   width: 90%;
   margin: auto;
   padding-block: 2rem;
   font-size: 2.2rem;
-  color: hsl(180deg, 90%, 51%);
+  color: hsl(180, 90%, 51%);
   font-family: "Orbitron", sans-serif;
   font-weight: 500;
 }
@@ -39,7 +39,7 @@ h3 {
   font-size: 1.4rem;
   margin-inline: 15%;
   padding: 1.5rem;
-  color: hsl(242deg, 78%, 37%);
+  color: hsl(242, 78%, 37%);
   background-color: white;
   font-family: "Advent Pro", sans-serif;
   font-weight: 600;
@@ -57,7 +57,7 @@ ul li {
 }
 ul li a {
   display: block;
-  color: hsl(242deg, 78%, 37%);
+  color: hsl(242, 78%, 37%);
 }
 ul li a + a {
   display: inline;
@@ -67,5 +67,5 @@ footer a {
   margin: 0.5rem;
   font-size: 1.5rem;
   font-family: "Orbitron", sans-serif;
-  color: hsl(180deg, 90%, 51%);
+  color: hsl(180, 90%, 51%);
 }/*# sourceMappingURL=atoms.css.map */

@@ -12,6 +12,9 @@ $paragraph-color:white;
 $orbitron-font:'Orbitron', sans-serif;
 $advent-font:'Advent Pro', sans-serif;
 
+//h3 font-size
+$subheading-size:3rem;
+
 
 //including mixins here
 @mixin paragraph-style {

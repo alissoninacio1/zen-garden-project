@@ -34,18 +34,17 @@ html {
 @media only screen and (min-width: 45rem) {
   
   .intro header{
+    margin-bottom: 10rem;
+    background-size: 80rem, 20rem;
     width: auto;
-    height: 24rem;
-    background-size: 50% 100%;
-    background-repeat: repeat;
-    background-clip: border-box;
-    background-image: url("https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2572&q=80");
+    height: 10rem;
+    border: 0.2rem solid;
+
+    background-image: url("pictures/Future-2.jpg");
   }
 
 
   .intro header h1 {
-    padding-top: 8rem;
-
     background-image: linear-gradient(
       -135deg,
       white 0%,
@@ -60,15 +59,15 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 5s linear infinite;
-    font-size: 7.5rem;
+    font-size: 5rem;
     font-family: $orbitron-font;
   }
 
 
   .intro header h2 {
-    margin-top: 6rem;
+    margin-top: 2rem;
     padding-right: 4rem;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: right;
   }
 
@@ -95,12 +94,14 @@ html {
     .participation h3,
     .requirements h3 {
     text-align: left;
+    font-size: $subheading-size;
     }
 
     /*SEND H3 TO THE RIGHT*/
     .explanation h3,
     .benefits h3 {
       text-align: right;
+      font-size: $subheading-size;
     }
 
     @keyframes textclip {

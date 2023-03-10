@@ -6,7 +6,7 @@
   font-size: 1.4rem;
   margin-inline: 15%;
   padding: 1.5rem;
-  color: hsl(242deg, 78%, 37%);
+  color: hsl(242, 78%, 37%);
   background-color: white;
   font-family: "Advent Pro", sans-serif;
   font-weight: 600;
@@ -21,7 +21,7 @@
 div.page-wrapper {
   margin-inline: auto;
   text-align: center;
-  background-color: hsl(208deg, 94%, 49%);
+  background-color: hsl(208, 94%, 49%);
 }
 
 .preamble {
@@ -29,7 +29,7 @@ div.page-wrapper {
 }
 
 footer {
-  background-color: hsl(242deg, 78%, 37%);
+  background-color: hsl(242, 78%, 37%);
   margin-block: 1.2rem;
   padding: 1.2rem;
 }
