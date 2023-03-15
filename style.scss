@@ -140,18 +140,21 @@ html {
       margin-bottom: 1.5rem;
     }
 
-    
+
     .main footer {
-      background-color: hsl(242deg, 78%, 37%);
-      margin-block: 1.2rem;
-      padding: 1.2rem;
+     margin-top: 7rem;
+
+     a {
+      font-size: 6rem;
+      margin-inline: 4rem;
+     }
+     
+
     }
-    .main footer a {
-      margin: 0.5rem;
-      font-size: 1.5rem;
-      font-family: "Orbitron", sans-serif;
-      color: hsl(180deg, 90%, 51%);
-    }
+
+
+    //working in aside.sidebar class to finish desktop style
+
     .sidebar h3.select {
       text-align: center;
       overflow: hidden;
