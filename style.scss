@@ -32,7 +32,12 @@ html {
 /* ----------------------------- DESKTOP VERSION ----------------------*/
 
 @media only screen and (min-width: 45rem) {
-  
+
+  a {
+    color: #CE048E;
+  }
+
+
   .intro header{
     margin-bottom: 10rem;
     background-size: 80rem, 20rem;
@@ -65,30 +70,47 @@ html {
 
 
   .intro header h2 {
-    margin-top: 2rem;
+    margin-top: -1rem;  //code to adjust the element position
     padding-right: 4rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: right;
   }
 
-  
-
-  .intro .summary {
-    margin: 16rem auto auto auto;
-    border: 100px solid transparent;
-    border-image: url("https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2572&q=80")
-    25% round;
+  //all paragraphs and subtitle section
+  h3 {
+    border-top: none;
   }
 
+  p {
+    border-radius: 2rem 2rem 0 0;
+    @include shadow;
+  }
+
+  p + p{ 
+    border-radius: 0;
+    @include shadow;
+  }
+
+  p:last-of-type {
+    border-radius: 0 0 2rem 2rem;
+    @include shadow;
+  }
+
+  .benefits p {
+    border-radius: 2rem;
+  }
+
+
+  .summary p,
   .preamble p,
   .explanation p,
   .participation p,
   .benefits p,
   .requirements p {
-    border: 100px solid transparent;
-    border-image: url("https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2572&q=80")
-    25% round;
+   @include desktop-paragraph-style;
   }
+
+ 
     /*SEND H3 TO THE LEFT*/
     .preamble h3,
     .participation h3,
@@ -111,24 +133,14 @@ html {
     }
 
 
-
-
-    .intro .summary p + p {
-      padding-block: 1rem;
-    }
-    .intro .summary p + p a {
-      font-weight: bold;
-    }
-    .intro .preamble {
-      margin-bottom: 3.5rem;
-    }
-
     .main .explanation,
     .main .participation,
     .main .benefits,
     .main .requirements {
-      margin-bottom: 3.5rem;
+      margin-bottom: 1.5rem;
     }
+
+    
     .main footer {
       background-color: hsl(242deg, 78%, 37%);
       margin-block: 1.2rem;

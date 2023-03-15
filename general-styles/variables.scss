@@ -16,6 +16,7 @@ $advent-font:'Advent Pro', sans-serif;
 $subheading-size:3rem;
 
 
+
 //including mixins here
 @mixin paragraph-style {
     font-size: 1.4rem;
@@ -29,4 +30,15 @@ $subheading-size:3rem;
 
 @mixin bottom-sections {
     margin-bottom: 3.5rem;
+}
+
+@mixin desktop-paragraph-style {
+    background-color: black;
+    color: $paragraph-color;
+    font-size: 2rem;
+    font-stretch: extra-expanded;
+}
+
+@mixin shadow {
+    box-shadow: #f02eaa66 0.5rem 0.5rem, #f02eaa4d 1rem 1rem, #f02eaa33 1.5rem 1.5rem, #f02eaa1a 2rem 2rem, #f02eaa0d 2.5rem 2.5rem;
 }
